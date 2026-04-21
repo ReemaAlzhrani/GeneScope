@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GeneScope</title>
+
+
+  <link rel="icon" href="GENE.png" type="image/png">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <!-- header -->
+  <div class="header">
+    <h1>🧬 GeneScope 🧬 </h1>
+    <p class="subtitle">
+      Explore human genes easily. Enter a gene symbol to view its information such as location, type, and description.
+    </p>
+  </div>
+
+  <!-- layout -->
+  <div class="layout">
+
+    <!-- LEFT -->
+    <div class="left">
+
+      <div class="widget">
+        <h3>Search Gene</h3>
+
+        <div class="input-group">
+          <label>Gene Symbol</label>
+          <input type="text" id="geneInput" placeholder="e.g. BRCA1">
+        </div>
+
+        <div class="input-group">
+          <label>Results Count</label>
+          <select id="countSelect">
+            <option value="1">1 result</option>
+            <option value="3" selected>3 results</option>
+            <option value="5">5 results</option>
+          </select>
+        </div>
+
+        <div class="buttons">
+          <button id="searchBtn">Search</button>
+          <button id="randomBtn">Random</button>
+          <button id="clearBtn">Clear</button>
+        </div>
+      </div>
+
+      <p id="message" class="message">Enter a gene symbol to begin.</p>
+
+    </div>
+
+    <!-- RIGHT -->
+    <div class="right">
+      <div id="results" class="results"></div>
+    </div>
+
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
